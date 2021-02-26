@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container;
+  .image {
+    width: 100px;
+  }
+  .links {
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: var(--white);
+      margin: 0.5em;
+      text-decoration: none;
+      transition: 450ms all;
+      font-size: 0.8em;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    margin-top: 2em;
+    .links a {
+      margin: 1em 1.5em;
+    }
+  }
+}

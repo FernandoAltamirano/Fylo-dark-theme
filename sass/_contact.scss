@@ -1,0 +1,45 @@
+.contact {
+  padding: 6em 2em 0 2em;
+  background: var(--dark-blue4);
+  .image {
+    width: 50%;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 2em auto;
+    p {
+      margin: 0;
+      margin-left: 1em;
+    }
+  }
+  @media (min-width: 1024px) {
+    padding-left: 5em;
+    .image {
+      width: 30%;
+    }
+    .details {
+      width: 90%;
+      display: grid;
+      margin: 1em;
+      grid-template-columns: 65% 35%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "first second"
+        "first thrid";
+    }
+    .item {
+      margin: 0;
+    }
+    .item:nth-child(1) {
+      margin-right: 2em;
+      grid-area: first;
+    }
+    .item:nth-child(2) {
+      grid-area: second;
+    }
+    .item:nth-child(3) {
+      grid-area: thrid;
+    }
+  }
+}

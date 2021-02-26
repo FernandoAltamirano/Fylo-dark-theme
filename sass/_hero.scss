@@ -1,0 +1,26 @@
+.hero {
+  margin-top: 3em;
+  text-align: center;
+  @include container;
+  .image {
+    img {
+      width: 80%;
+      margin-bottom: 2em;
+    }
+  }
+  h1 {
+    font-family: var(--raleway);
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 1.3em;
+  }
+  @media (min-width: 1024px) {
+    .image img {
+      width: 50%;
+    }
+    .text {
+      margin: auto;
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.cards {
+  @include container;
+  text-align: center;
+  margin-top: 5em;
+  .card {
+    margin-top: 6em;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8em;
+    .card {
+      padding: 2em 1em;
+      margin: auto;
+      width: 40%;
+    }
+  }
+}

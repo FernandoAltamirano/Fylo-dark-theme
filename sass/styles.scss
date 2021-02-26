@@ -1,0 +1,64 @@
+:root {
+  --dark-blue: hsl(218, 28%, 13%);
+  --dark-blue2: hsl(219, 30%, 18%);
+  --dark-blue3: hsl(217, 28%, 15%);
+  --dark-blue4: hsl(216, 53%, 9%);
+
+  --white: hsl(0, 0%, 100%);
+  --openSans: "Open Sans", sans-serif;
+  --raleway: "Raleway", sans-serif;
+  --colorButton: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+  --lightGreen: hsl(176, 68%, 64%);
+}
+
+body {
+  background: var(--dark-blue);
+  font-family: var(--openSans);
+  color: var(--white);
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@mixin container {
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 80%;
+}
+.button {
+  font-size: 0.8em;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 30px;
+  background: var(--colorButton);
+  padding: 0.8em 6em;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin-bottom: 3em;
+}
+
+@import "header";
+@import "hero";
+@import "cards";
+@import "works";
+@import "comentaries";
+@import "form";
+@import "contact";
+@import "footer";

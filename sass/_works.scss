@@ -1,0 +1,33 @@
+.works {
+  @include container;
+  text-align: center;
+  margin-top: 6em;
+  .image {
+    width: 90%;
+  }
+  .text {
+    text-align: left;
+    h2 {
+      font-size: 1em;
+    }
+    p {
+      margin: 1em 0;
+    }
+    .link {
+      color: var(--lightGreen);
+      text-decoration: none;
+      font-size: 0.8em;
+      border-bottom: 1px solid var(--lightGreen);
+    }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    .image {
+      width: 50%;
+    }
+    .text {
+      margin-left: 2em;
+    }
+  }
+}
